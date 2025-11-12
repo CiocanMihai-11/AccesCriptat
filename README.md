@@ -25,8 +25,8 @@ ESP32 citește UID-ul unui tag și îl trimite la server (prin HTTP/HTTPS).
 
 ## 2️ Verificarea accesului
 Serverul caută UID-ul în baza de date:
-- Dacă `enabled = true`, trimite răspuns **„Acces Permis”** ✅  
-- Dacă `enabled = false` sau lipsă → **„Acces Respins”** ❌  
+- Dacă `enabled = true`, trimite răspuns **„Acces Permis”** 
+- Dacă `enabled = false` sau lipsă → **„Acces Respins”**   
 
 
 
