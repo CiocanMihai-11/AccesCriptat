@@ -60,9 +60,7 @@ def dec_field(sealed_b64: str) -> str:
     c = AES.new(AES_KEY, AES.MODE_GCM, nonce=nonce)
     pt = c.decrypt_and_verify(ct, tag)
     return pt.decode("utf-8")
-
 # ------------------------------ DB: SQLite -------------------------------------
-
 DB_PATH = os.path.join(BASE, "acces.db")
 conn = sqlite3.connect(DB_PATH, check_same_thread=False)
 cur = conn.cursor()
@@ -78,9 +76,7 @@ CREATE TABLE IF NOT EXISTS users (
 )
 """)
 conn.commit()
-
 # --------------------------------- Schemas -------------------------------------
-
 HexUID = constr(strip_whitespace=True, min_length=4, max_length=64, regex=r"^[0-9a-fA-F\s]+$")
 
 class EnrollReq(BaseModel):
@@ -147,3 +143,4 @@ def peek_name(rfid_uid: str):
         raise HTTPException(status_code=404, detail="Nu exista")
     name = dec_field(row[0])
     return {"rfid_uid_norm": norm_uid(rfid_uid), "name": name}
+
