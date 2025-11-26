@@ -2,7 +2,7 @@
 
 Acest proiect implementează un **sistem embedded distribuit**, construit în jurul unei plăci **ESP32**, care controlează **3 cititoare RFID** și acționează **3 uși independente** în timp real. Sistemul integrează o componentă externă — un **PC** — folosit pentru managementul centralizat al cardurilor, vizualizarea logurilor și controlul global al sistemului printr-un **protocol personalizat de comunicație**.
 
-Proiectul utilizează **FreeRTOS**, multiple task-uri, cozi de mesaje, semafoare și periferice hardware integrate în microcontroller, respectând toate cerințele unui sistem embedded de timp real.
+Proiectul utilizează **FreeRTOS**, multiple task-uri, cozi de mesaje și periferice hardware integrate în microcontroller, respectând toate cerințele unui sistem embedded de timp real.
 
 ---
 
