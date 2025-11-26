@@ -4,6 +4,7 @@
 # /verify   -> verifica accesul dupa rfid_uid (prin cred_id derivat)
 # /peek/... -> (doar pt test/admin) decripteaza numele
 # /health   -> verificare simpla ca serverul e ok
+# /hp   -> verificarea serverului
 
 import os, hmac, hashlib, base64, sqlite3
 from typing import Optional
@@ -143,4 +144,5 @@ def peek_name(rfid_uid: str):
         raise HTTPException(status_code=404, detail="Nu exista")
     name = dec_field(row[0])
     return {"rfid_uid_norm": norm_uid(rfid_uid), "name": name}
+
 
