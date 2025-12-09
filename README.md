@@ -6,7 +6,7 @@ Proiectul utilizează **FreeRTOS**, multiple task-uri, cozi de mesaje și perife
 
 ---
 
-## Schema bloc a proiectului - In Progress...
+## Schema bloc a proiectului - In Progress....
 
 --- 
 
@@ -55,11 +55,17 @@ ESP32 rulează **5 task-uri principale**:
 
 ### 2. DoorTask2 (Real-Time)
 
-* identic pentru ușa 2
+* citire RFID #2
+* validare rapidă card
+* acționare ușă 2
+* trimitere evenimente către CommTask
 
 ### 3. DoorTask3 (Real-Time)
 
-* identic pentru ușa 3
+* citire RFID #3
+* validare rapidă card
+* acționare ușă 3
+* trimitere evenimente către CommTask
 
 ### 4. CommTask
 
