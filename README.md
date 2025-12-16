@@ -65,7 +65,7 @@ ESP32 rulează **5 task-uri principale**:
 * citire RFID #3
 * validare rapidă card
 * acționare ușă 3
-* trimitere evenimente către CommTask
+* trimitere evenimente către ComTask
 
 ### 4. CommTask
 
