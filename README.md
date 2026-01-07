@@ -6,7 +6,7 @@ Proiectul utilizează **FreeRTOS**, multiple task-uri, cozi de mesaje și perife
 
 ---
 
-## Schema bloc a proiectului - In Progress....
+## Schema bloc a proiectului - In Progress..
 
 --- 
 
